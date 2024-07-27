@@ -1,0 +1,64 @@
+//Questions 
+Two Sum (Problem #1)
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+Subarray Sum Equals K (Problem #560)
+Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+
+Path Sum III (Problem #437)
+Given the root of a binary tree and an integer targetSum, return the number of paths where the sum of the values along the path equals targetSum.
+
+Continuous Subarray Sum (Problem #523)
+Given an integer array nums and an integer k, return true if there's a subarray that sums up to k, or false otherwise.
+
+Find All Anagrams in a String (Problem #438)
+Given two strings s and p, return an array of all the start indices of p's anagrams in s.
+
+Longest Subarray with Sum Divisible by K (Problem #974)
+Given an integer array nums and an integer k, return the length of the longest subarray that has a sum divisible by k.
+
+Max Number of K-Sum Pairs (Problem #1679)
+Given an integer array nums and an integer k, return the maximum number of pairs in nums such that their sum is divisible by k.
+
+Check if Array Pairs Are Divisible by k (Problem #1497)
+Given an array of integers arr of even length and an integer k, return true if the array can be divided into pairs such that the sum of each pair is divisible by k.
+These problems cover a range of scenarios where the Two Sum approach can be applied efficiently.
+
+
+4Sum II (Problem #454)
+Given four lists A, B, C, and D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
+
+Two Sum IV - Input is a BST (Problem #653)
+Given the root of a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum equals the given target.
+
+Two Sum Less Than K (Problem #1099)
+Given an array nums of integers and an integer k, return the maximum sum such that there exists i < j with nums[i] + nums[j] < k. If no such pair exists, return -1.
+
+Two Sum II - Input array is sorted (Problem #167)
+Given an array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number.
+These additional problems provide further opportunities to practice and apply the Two Sum approach in different contexts.
+
+
+
+
+Videos :
+https://youtu.be/MHocw0bP1rA?list=LL
+https://youtu.be/uZzvivFkgtM?list=LL
+https://youtu.be/yyZA4v0x16w?list=LL
+
+//Analysis 
+depending upon requirment we store {sum,frequecy} , {arr[i],i}=> for two consecutive sum equlas target,  {remainder,index}=> consecutive subarray
+
+
+1.The two sum hash map approach is particularly useful in problems where you need to find pairs of elements or subarrays with certain properties that can be efficiently checked using a hash map. Here are some characteristics of problems where the two sum hash map approach might be applicable:
+2.Given a target value: Problems where you are given a target value (such as a sum, difference, or product) and asked to find elements or subarrays that satisfy a condition involving that target value.
+3.Array or sequence data structure: Problems where the input is represented as an array or a sequence of elements.
+4.Contiguous or non-contiguous subarrays: Problems that involve finding subarrays with specific properties, whether they are contiguous or non-contiguous.
+5.Optimal or efficient solution: Problems where you need to find a solution that has optimal time or space complexity.
+6.Single pass or linear time: Problems where you need to find the solution in a single pass through the input array or achieve linear time complexity.
+7.Hash map or frequency count: Problems where you can use a hash map or frequency count to store information about elements encountered so far and efficiently look up or manipulate that information.
+8.Based on these characteristics, you can identify whether the two sum hash map approach might be applicable to a given problem. If the problem involves finding pairs of elements or subarrays with specific properties and can be efficiently solved using a hash map, then the two sum hash map approach might be a good candidate.
+
+
+
+

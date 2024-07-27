@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        header .user-info span {
+            margin-right: 10px;
+        }
+        .container {
+            background-image: url('background.png'); /* Placeholder for background image */
+            background-size: cover;
+            padding: 20px;
+            color: #333;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .controls div {
+            display: flex;
+            align-items: center;
+        }
+        .controls select, .controls input[type="radio"], .controls label {
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2b04e;
+        }
+        td input[type="checkbox"] {
+            margin: 0 auto;
+            display: block;
+        }
+        .footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        button {
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- Placeholder for logo -->
+            <img src="logo.png" alt="Manipal Academy of Higher Education">
+        </div>
+        <div class="user-info">
+            <span>ADITYA SANDIP WADGAONKAR</span>
+            <!-- Placeholder for user icon -->
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+    </header>
+    <div class="container">
+        <div class="controls">
+            <div>
+                <label for="semester-year">Semester/Year</label>
+                <select id="semester-year">
+                    <option value="IV">IV</option>
+                </select>
+                <label for="gpa">GPA</label>
+                <span id="gpa">6.50</span>
+                <label for="cgpa">CGPA</label>
+                <span id="cgpa">6.78</span>
+                <label for="credits">Total Credit Earned</label>
+                <span id="credits">22.00</span>
+            </div>
+            <div>
+                <input type="radio" id="revaluation-f" name="revaluation" value="f">
+                <label for="revaluation-f">Revaluation – 'F' Grade Only</label>
+                <input type="radio" id="make-up" name="revaluation" value="makeup">
+                <label for="make-up">Make-Up</label>
+                <input type="radio" id="revaluation-non-f" name="revaluation" value="non-f">
+                <label for="revaluation-non-f">Revaluation – 'Non-F' Grade Only</label>
+                <input type="radio" id="revaluation-makeup" name="revaluation" value="revaluation-makeup">
+                <label for="revaluation-makeup">Revaluation Makeup 'F and Non–F' Grade</label>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Actual Semester/Year</th>
+                    <th>Grade</th>
+                    <th>Credit</th>
+                    <th>Revaluation1</th>
+                    <th>Makeup Exam</th>
+                    <th>Revaluation2/Revaluation3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ICT 2222</td>
+                    <td>DESIGN AND ANALYSIS OF ALGORITHMS</td>
+                    <td>IV</td>
+                    <td>D</td>
+                    <td>4.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ICT 2225</td>
+                    <td>DATABASE MANAGEMENT SYSTEMS</td>
+                    <td>IV</td>
+                    <td>C</td>
+                    <td>3.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ICT 2226</td>
+                    <td>COMPUTER NETWORKS AND PROTOCOLS</td>
+                    <td>IV</td>
+                    <td>C</td>
+                    <td>3.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ICT 2227</td>
+                    <td>OPERATING SYSTEMS</td>
+                    <td>IV</td>
+                    <td>D</td>
+                    <td>4.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ICT 2228</td>
+                    <td>SOFTWARE DESIGN TECHNOLOGY</td>
+                    <td>IV</td>
+                    <td>D</td>
+                    <td>3.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>ICT 2241</td>
+                    <td>DATABASE SYSTEMS LAB</td>
+                    <td>IV</td>
+                    <td>C</td>
+                    <td>1.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ICT 2244</td>
+                    <td>OPERATING SYSTEMS LAB</td>
+                    <td>IV</td>
+                    <td>D</td>
+                    <td>1.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>MAT 2226</td>
+                    <td>ENGINEERING MATHEMATICS - IV</td>
+                    <td>IV</td>
+                    <td>D</td>
+                    <td>3.00</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button">Apply</button>
+    </div>
+    <div class="footer">
+        DISCLAIMER: Information Accuracy and Updates
+    </div>
+</body>
+</html>
